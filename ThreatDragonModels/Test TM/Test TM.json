@@ -10,7 +10,142 @@
       {
         "title": "First diagram",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 13,
+                "y": 121
+              },
+              "angle": 0,
+              "id": "128db9dc-38c8-47b4-92f6-8477a60e6fdf",
+              "z": 1,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Someone can spoof",
+                  "mitigation": "Mitigate the spoof",
+                  "title": "Spoofing zomg"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "process 0"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 370,
+                "y": 148
+              },
+              "angle": 0,
+              "id": "eead0607-ec26-45d2-9da1-beae8a774710",
+              "z": 2,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "DoS",
+                  "type": "Denial of service",
+                  "mitigation": "Protect",
+                  "description": "Attack"
+                }
+              ],
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "process 1"
+                },
+                ".element-text": {
+                  "class": "element-text hasOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "128db9dc-38c8-47b4-92f6-8477a60e6fdf"
+              },
+              "target": {
+                "id": "eead0607-ec26-45d2-9da1-beae8a774710"
+              },
+              "vertices": [],
+              "id": "9a28a41a-49d3-4fbf-8593-4a6c6eea700c",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "secret data",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 234,
+                "y": 51
+              },
+              "target": {
+                "x": 220,
+                "y": 326
+              },
+              "vertices": [
+                {
+                  "x": 254,
+                  "y": 299
+                }
+              ],
+              "id": "7cf7497f-0f44-463f-a6a7-1c3f1c4ffd07",
+              "z": 6,
+              "attrs": {}
+            }
+          ]
+        },
+        "size": {
+          "height": 590,
+          "width": 790
+        }
       }
     ],
     "reviewer": "you"
